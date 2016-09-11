@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="JenkinsProxy" startOnLoad="true" trace="disable"
+  transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+  <target>
+    <inSequence>
+      <log level="full">
+        <property name="Test" value="Entered Proxy"/>
+      </log>
+      <respond/>
+    </inSequence>
+    <outSequence/>
+    <faultSequence/>
+  </target>
+</proxy>
